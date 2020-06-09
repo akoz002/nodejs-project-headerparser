@@ -1,21 +1,20 @@
 {
-	"name": "request_header",
+	"name": "akoz002-project-headerparser",
 	"version": "0.0.1",
-	"description": "API project for freeCodeCamp",
+	"description": "freeCodeCamp Request Header Parser Microservice project",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
 	},
 	"dependencies": {
+		"cors": "^2.8.1",
+		"dotenv": "^8.2.0",
 		"express": "^5.0.0-alpha.2",
-		"cors": "^2.8.1"
-	},
-	"engines": {
-		"node": "4.4.5"
+		"node-fetch": "^2.6.0"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://hyperdev.com/#!/project/welcome-project"
+		"url": "https://github.com/akoz002/nodejs-project-headerparser.git"
 	},
 	"keywords": [
 		"node",
