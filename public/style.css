@@ -51,3 +51,11 @@ li {
 a {
 	color: #2574A9;
 }
+
+.code-block {
+	max-width: 900px;
+	margin: 1em auto;
+	padding: 0.5em;
+	text-align: left;
+	background-color: #fff;
+}
