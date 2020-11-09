@@ -5,7 +5,7 @@
 
 ### Demo App
 
-A demo app can be found at the link below. It is implemented in Node.js and Express. At the frontend it contains a simple React component for fetching and displaying the request header info. React source can be found at `views/js/`. A basic test can be found at `tests/tests.js`.
+A demo app can be found at the link below. At the backend it is implemented in *Node.js* and *Express*. The server source can be found in `server.js`. At the frontend the app contains a React component for fetching and displaying the request header info. React source can be found at `views/src/`, and it was built with *Parcel*. A basic test can be found at `tests/tests.js`.
 
 * https://akoz002-nodejs-headerparser.herokuapp.com/
 
