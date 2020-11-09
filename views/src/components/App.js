@@ -1,10 +1,11 @@
-'use strict';
+
+import React from 'react';
 
 /*
  * React component for displaying the request header info.
  */
 
-class HeaderInfoDisplay extends React.Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,8 +46,3 @@ class HeaderInfoDisplay extends React.Component {
     );
   }
 }
-
-ReactDOM.render(
-  <HeaderInfoDisplay />,
-  document.querySelector('#header-info-display')
-);
