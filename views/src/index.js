@@ -2,9 +2,9 @@
 
 import React from 'react';
 import { render } from 'react-dom';
-import App from './components/App';
+import HeaderInfoDisplay from './components/HeaderInfoDisplay';
 
 render(
-  <App />,
+  <HeaderInfoDisplay />,
   document.querySelector('#header-info-display')
 );

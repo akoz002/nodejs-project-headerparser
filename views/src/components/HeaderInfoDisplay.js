@@ -5,7 +5,7 @@ import React from 'react';
  * React component for displaying the request header info.
  */
 
-export default class App extends React.Component {
+export default class HeaderInfoDisplay extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
