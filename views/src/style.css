@@ -1,61 +1,98 @@
-/****** Main Styling ******/
 
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #222;
 	background-color: #FaFaFa;
+	box-sizing: border-box;
+	max-width: 660px;
+	min-width: 320px;
+	margin: auto;
+	text-align: justify;
+	line-height: 1.4;
+}
+
+main, footer {
+	margin: 2em 0;
+	padding: 0 3%;
+}
+
+h1, h2, p {
 	text-align: center;
-	line-height: 1.4em;
 }
 
-.container {
-	padding: 0;
-	margin-top: 40px;
-}
-
-h3 {
-  margin-top: 30px;
-}
-
-.footer {
-	margin-top: 40px;
-}
-
-.user-stories {
-  position: relative;
-  text-align: justify;
-  max-width: 700px;
-  margin: 15px auto;
-}
 code {
   font-family: monospace;
   padding: 2px;
   color: black;
   background-color: #fff;
 }
+
 ol {
-	list-style-position: outside;
-}
-ul {
-	list-style-type: none;
+	padding-left: 1.1em;
 }
 
 li {
-  margin-bottom: 0.5em;
-}
-.user-stories li {
   margin-bottom: 1em;
 }
 
 a {
-	color: #2574A9;
+	color: hsl(204deg 64% 40%);
 }
 
-.code-block {
-	max-width: 900px;
+a:visited {
+	color: hsl(270deg 64% 30%);
+}
+
+button {
+	font-family: arial;
+	font-size: 0.85em;
+	display: block;
 	margin: 1em auto;
-	padding: 0.5em;
+	padding: 0.5em 1em;
+	color: black;
+	background-color: hsl(0, 0%, 93%);
+	border: 1px solid hsl(0, 0%, 40%);
+	border-radius: 0.3em;
+}
+
+button:hover {
+	background-color: hsl(0, 0%, 87%);
+	border-color: hsl(0, 0%, 30%);
+}
+
+/* Block of code displaying returned JSON. */
+.code-block {
+	margin: 0 1em 1em;
+	background-color: white;
+	border-radius: 0.5em;
+}
+
+ul {
+	list-style: none;
+}
+
+ul.code-block {
+	padding-left: 1em;
 	text-align: left;
-	background-color: #fff;
+}
+
+ul.code-block ul {
+	padding-left: 1em;
+}
+
+ul.code-block li {
+	margin: 0;
+}
+
+p.code-block {
+	padding: 1em 0;
+}
+
+/*** Media Queries ***/
+
+@media (max-width: 425px) {
+	body {
+		font-size: 14px;
+	}
 }
