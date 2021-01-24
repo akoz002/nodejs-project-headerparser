@@ -1,11 +1,10 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
 	color: #222;
 	background-color: #FaFaFa;
 	box-sizing: border-box;
-	max-width: 660px;
+	max-width: 42em;
 	min-width: 320px;
 	margin: auto;
 	text-align: justify;
@@ -61,6 +60,11 @@ button:hover {
 	border-color: hsl(0, 0%, 30%);
 }
 
+/* Keyboard and mouse focus for all elements. */
+:focus {
+  outline: medium dotted black;
+}
+
 /* Block of code displaying returned JSON. */
 .code-block {
 	margin: 0 1em 1em;
@@ -75,6 +79,7 @@ ul {
 ul.code-block {
 	padding-left: 1em;
 	text-align: left;
+	overflow: auto;
 }
 
 ul.code-block ul {
@@ -91,8 +96,32 @@ p.code-block {
 
 /*** Media Queries ***/
 
-@media (max-width: 425px) {
-	body {
-		font-size: 14px;
-	}
+@media (min-width: 80em) {
+  html {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 100em) {
+  html {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 120em) {
+  html {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 140em) {
+  html {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 160em) {
+  html {
+    font-size: 2em;
+  }
 }
