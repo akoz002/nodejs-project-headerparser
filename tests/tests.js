@@ -7,12 +7,14 @@ const assert = require('assert');
 const fetch = require('node-fetch');
 require('dotenv').config();
 
+const APP_URL = process.env.APP_URL || 'http://localhost:3000/api/whoami/';
+
 /*
  * Perform a request and validate the response.
  */
 
 const validateRequest = acceptLanguage => fetch(
-  process.env.APP_URL,
+  APP_URL,
   { headers: { 'Accept-Language': acceptLanguage } }
   )
   .then(response => response.json())
@@ -37,5 +39,5 @@ const validateRequest = acceptLanguage => fetch(
  * Run a basic test.
  */
 
-console.log(`Running test on app URL: '${process.env.APP_URL}'`);
+console.log(`Running test on app URL: '${APP_URL}'\n`);
 validateRequest("en-US,en;q=0.5");
